@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        user-select: none;
+    }
+
+    .container {
+        width: 1200px;
+        height: 800px;
+        margin: auto;
+        background-image: url(/img/bg2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: brown;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .box {
+        width: 50%;
+        height: 65%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        background-color: aquamarine;
+        position: relative;
+        margin-left: 20px;
+    }
+
+    h1 {
+        align-self: center;
+        position: absolute;
+        top: 0;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Create Account</h1>
+            <form action="">
+                <div class="form1">
+                    <label for="name">Username: </label>
+                    <input type="text" required id="name">
+                </div>
+                <div class="form2">
+                    <label for="pass">Password: </label>
+                    <input type="password" id="pass" required>
+                </div>
+                <div class="form3">
+                    <label for="gmail">Gmail: </label>
+                    <input type="email" required id="gmail">
+                </div>
+                <div class="form4">
+                    <label for="tel">Tel: </label>
+                    <input type="tel" required id="tel">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
