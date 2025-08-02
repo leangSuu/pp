@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px ;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color:rgba(0, 0, 0, 0.4) ;
+}
+.container{
+    width: 1320px;
+    margin: auto;
+}
+header .navbar-nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar-nav .box-logo .logo img{
+    width: 200px;
+    display: block;
+    height: 150px;
+}
+header .navbar-nav .nav-list{
+    list-style-type:none ;
+    display: flex;
+}
+header .navbar-nav .nav-list li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.container-fluid::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #6CFF4DB2;
+    position: absolute;
+    top: -65%;
+    left: 0;
+    transform: skewY(-20deg);
+}
+.hero-banner .box-img{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 18%;
+    left: 20%;
+    transform: rotate(-20deg);
+    background-image: url(../img/icons8-cambodia-64.png);
+    background-size: cover;
+    background-position: center;
+}
+.hero-banner .hero-img{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    right: 100px;
+    bottom: 100px;
+}
+.hero-banner .hero-img input{
+    width: 400px;
+    height: 50px;
+    margin: 30px 0;
+    padding-left: 20px;
+    border-radius:30px ;
+}
+.hero-banner .hero-img .box-img-hero
+{
+    width: 100%;
+    height: 500px;
+    background-color: aquamarine;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+}
